@@ -1,0 +1,60 @@
+.btncontainer {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: drop-shadow(0 0 5px black);
+  transition: 0.5s all ease;
+  z-index: 100;
+}
+
+.btncontainer.hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.btncontainer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btncontainer ul li {
+  height: 2.5em;
+  width: 2.5em;
+  display: grid;
+  place-content: center;
+  font-size: 1.2rem;
+  transition: 0.2s all;
+}
+
+.btncontainer ul li:hover {
+  width: 3em;
+}
+
+.btncontainer ul a:nth-child(1) li {
+  background-color: #3c5a98;
+}
+
+.btncontainer ul a:nth-child(2) li {
+  background-color: #ff0008;
+}
+
+.btncontainer ul a:nth-child(3) li {
+  background-color: #1ea1f2;
+}
+
+.btncontainer ul a:nth-child(4) li {
+  background-color: #df0e15;
+}
+
+.btncontainer ul a:nth-child(5) li {
+  background-color: #0077b5;
+}
+
+.btncontainer a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: white !important;
+  text-decoration: none;
+}

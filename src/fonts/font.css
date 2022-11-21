@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "popins-regular";
+  src: url(./Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "popins-light";
+  src: url(./Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: "popins-medium";
+  src: url(./Poppins/Poppins-Medium.ttf)
+}
+
+@font-face {
+  font-family: "popins-bold";
+  src: url(./Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "open-sans-regular";
+  src: url(./Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "open-sans-medium";
+  src: url(./Open_Sans/static/OpenSans/OpenSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: "montserrat-regular";
+  src: url(./Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "montserrat-bold";
+  src: url(./Montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "montserrat-light";
+  src: url(./Montserrat/static/Montserrat-Light.ttf);
+}

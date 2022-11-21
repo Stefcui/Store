@@ -1,0 +1,124 @@
+.video {
+    padding: 0 !important;
+    width: 100%;
+    aspect-ratio: 1;
+    max-height: 100vh;
+    padding-top: 5rem;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    z-index: 2;
+  }
+  
+  .video .menu {
+    position: absolute;
+    top: 50%;
+    right: 5rem;
+    transform: translateY(-50%);
+    z-index: 5;
+  }
+  
+  .video .menu label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+      color: white;
+      background: #59aada;
+      display: grid;
+      /* place-content: center; */
+      height: 2rem;
+      width: 2rem;
+      font-size: 1.3rem;
+      transition: 0.5s all ease;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: 0.5s all;
+      z-index: 5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 2rem;
+      min-height: 2rem !important;
+      overflow: hidden;
+  }
+  
+  .video .menu input {
+    display: none;
+  }
+  
+  .video .menu input:checked + label {
+    transform: translate(-50%, 50%) rotate(225deg);
+  }
+  
+  .video .menu ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .video .menu li {
+      display: grid;
+      place-content: center;
+      height: 2rem;
+      aspect-ratio: 1;
+      padding: 0.4em;
+      object-fit: contain;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #59aada;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.5s all;
+      width: 2rem;
+  }
+  
+  .video .menu input:checked ~ ul li:nth-child(1) {
+    transform: translate(-150%, -50%);
+  }
+  
+  .video .menu input:checked ~ ul li:nth-child(2) {
+    transform: translate(-50%, -150%);
+  }
+  
+  .video .menu input:checked ~ ul li:nth-child(3) {
+    transform: translate(50%, -50%);
+  }
+  
+  .video .menu li img {
+    width: 0.8rem;
+    filter: invert();
+  }
+  
+  .video video {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+.video .menu li:hover {
+    width: 4rem;
+    height: 4rem;
+}
+.video .menu li:hover img {
+    width: 1.2rem;
+}
+.video .menu li {
+    display: grid;
+    place-content: center;
+    height: 3rem;
+    aspect-ratio: 1;
+    padding: 0.4em;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #59aada;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s all;
+    width: 3rem;
+}
+  
